@@ -6,4 +6,5 @@ body {
   align-items: center;
   margin-top: -100px;
   font-family: 'Cutive Mono', 'Courier New', monospace;
+  cursor: pointer;
 }

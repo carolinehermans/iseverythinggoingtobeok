@@ -7,6 +7,29 @@
     rel="stylesheet"
   />
 </head>
+
 <body>
-  yes.
+  <div id="message"></div>
+  <script>
+    const phrases = [
+      'yea',
+      'yes',
+      'yep',
+      'yepperoo',
+      'yup',
+      'yeppers',
+      'you bet',
+      'you betcha',
+      'yeet',
+      'mhm'
+    ];
+
+    function newPhrase() {
+      document.getElementById('message').innerHTML =
+        phrases[Math.floor(Math.random() * phrases.length)];
+    }
+    newPhrase();
+
+    document.body.addEventListener('click', newPhrase);
+  </script>
 </body>
